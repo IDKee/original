@@ -1,0 +1,12 @@
+package org.test.system.service.impl;
+
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.test.system.entity.RolesPermissions;
+import org.test.system.mapper.RolesPermissionsMapper;
+import org.test.system.service.IRolesPermissionsService;
+
+/**
+ * @author Administrator
+ */
+public class RolesPermissionsService extends ServiceImpl<RolesPermissionsMapper, RolesPermissions> implements IRolesPermissionsService {
+}
