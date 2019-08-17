@@ -7,7 +7,6 @@ import org.test.people.entity.People;
 import org.test.people.mapper.PeopleMapper;
 import org.test.people.service.IPeopleService;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
@@ -21,8 +20,11 @@ import java.util.Map;
 @Service
 public class PeopleService extends ServiceImpl<PeopleMapper, People> implements IPeopleService{
 
+    @Autowired
+    private PeopleMapper peopleMapper;
+
     @Override
     public List<Map> selectListAll() {
-        return baseMapper.selectListAll();
+        return peopleMapper.selectListAll();
     }
 }

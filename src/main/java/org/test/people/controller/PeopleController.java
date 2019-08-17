@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.test.common.base.BaseController;
 import org.test.people.service.IPeopleService;
 
 import javax.annotation.Resource;
@@ -24,7 +25,7 @@ import java.util.Map;
  * @date 2019/7/23 17:58
  */
 @Controller
-public class PeopleController {
+public class PeopleController extends BaseController {
 
     @Resource
     private IPeopleService peopleService;
